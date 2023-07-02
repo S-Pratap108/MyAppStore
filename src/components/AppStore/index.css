@@ -1,0 +1,58 @@
+/* Write your CSS here */
+
+.main-bg {
+  background-image: linear-gradient(to bottom, #fff1eb, #ace0f9);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bree Serif';
+}
+
+.hdg {
+  font-size: 60px;
+  color: #1e293b;
+}
+
+@media (max-width: 768px) {
+  .hdg {
+    font-size: 30px;
+  }
+}
+
+.search-cont {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.search {
+  width: 500px;
+  height: 30px;
+}
+
+.tab-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 45%;
+}
+
+.apps-cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 70%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,29 @@
+/* Write your CSS here */
+.tab-Item-cont {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 150px;
+  color: #2563eb;
+  padding: 20px;
+  cursor: pointer;
+  border-width: 0px;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 70px;
+  }
+}
+
+.heighlited {
+  border-color: #7b8794;
+  border-bottom: 5px;
+  outline: 5px;
+  border-style: solid;
+}
