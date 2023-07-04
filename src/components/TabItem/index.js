@@ -3,16 +3,16 @@ import './index.css'
 
 const TabItem = props => {
   const {tabDetails, isActive, getUpdatedActiveTab} = props
-  const {tabID, displayText} = tabDetails
+  const {tabId, displayText} = tabDetails
 
   const onSelectingTab = () => {
-    getUpdatedActiveTab(tabID)
+    getUpdatedActiveTab(tabId)
   }
 
   const selectedBtn = isActive ? 'heighlited' : ''
 
   return (
-    <li className="tab-Item-cont" key={tabID}>
+    <li className="tab-Item-cont" key={tabId}>
       <button
         className={`btn ${selectedBtn}`}
         type="button"

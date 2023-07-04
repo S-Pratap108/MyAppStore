@@ -303,8 +303,9 @@ class AppStore extends Component {
 
   getFilteredApps = () => {
     const {activeTab} = this.state
-    const {tabId} = activeTab
-    const filteredApps = appsList.filter(eachApp => eachApp.category === tabId)
+    const filteredApps = appsList.filter(
+      eachApp => eachApp.category === activeTab.tabId,
+    )
     return filteredApps
   }
 
@@ -327,13 +328,13 @@ class AppStore extends Component {
             type="search"
             placeholder="Search"
             value={searchInput}
+            onChange={this.onSeach}
             className="search"
           />
           <img
             src="https://assets.ccbp.in/frontend/react-js/app-store/app-store-search-img.png"
             alt="search icon"
             className="search-icon"
-            onClick={this.onSeach}
           />
         </div>
         <ul className="tab-cont">
